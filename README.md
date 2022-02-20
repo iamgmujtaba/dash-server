@@ -62,12 +62,10 @@ ffmpeg -re -i input.mp4 -map 0 -map 0 -c:v libx264 -b:v:0 800k -b:v:1 300k -s:v:
 Open cmd and type **ipconfig**. Get IPv4 Address. It would be 192.XXX.XXX.XXX.
 ### Play Video on DASH Player
 
-<!-- #### iPhone/iPad (Safari Web Browser)
-If you have iPhone, open safari and type like this **192.XXX.XXX.XXX/bbb/out.m3u8**. **bbb** is the directory of the processed BigBuckBunny video and **out.m3u8** is the HLS text file we created using the above script. Please note the iPhone should be connected to the same WiFi network.
 #### VLC
-If you do not have iPhone, install [VLC](https://www.videolan.org/vlc/download-windows.html). Open **Network Stream** by using **Ctrl+N**. Type the URL like this **http://192.XXX.XXX.XXX/bbb/out.m3u8**. And then press play. 
-If you can watch the video, it means you have configured HLS on your window machine.
+Install [VLC](https://www.videolan.org/vlc/download-windows.html). Open **Network Stream** by using **Ctrl+N**. Type the URL like this **http://192.XXX.XXX.XXX/bbb_dash/out.mpd**. **bbb_dash** is the directory of the processed BigBuckBunny video and **out.mpd** is the DASH text file we created using the above script. Finally, press play. 
+If you can watch the video, it means you have configured DASH on your window machine.
 #### Ubuntu or Jetson Devices
-If you want to use a native HLS web player, clone [hls.js](https://github.com/video-dev/hls.js/) from GitHub and follow the [installation](https://github.com/video-dev/hls.js/#getting-started-with-development) instructions. -->
+If you want to use a native HLS web player, clone [dash.js](https://github.com/Dash-Industry-Forum/dash.js) from GitHub and follow the [installation](https://github.com/Dash-Industry-Forum/dash.js#getting-started) instructions.
 
 Raise an issue if you are facing any problem :)
