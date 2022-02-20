@@ -29,7 +29,7 @@ To test streams, you need to allow other websites to access files on your web se
 ## Step 4: Adding the HLS MIME Type
 HLS requires statements to learn how to analyze video and audio files. HLS manifest file ends in **.mpd**. Windows IIS does not know about this extension. So, for IIS to correctly send the file to the player, you need to add this extension to IIS.
 Under connections click your server and double Click MIME Types
-1. Type **.m3u8** for File name extension; type **application/dash+xml** for MIME-type
+1. Type **.mpd** for File name extension; type **application/dash+xml** for MIME-type
 2. Press okay.
 
 <!-- <img src="https://github.com/iamgmujtaba/hls-server/blob/master/figures/mime.jpg" width="550" height="200"> -->
