@@ -27,10 +27,11 @@ To test streams, you need to allow other websites to access files on your web se
 <img src="https://github.com/iamgmujtaba/dash-server/blob/master/figures/hrs_page.jpg" width="550" height="200">
 
 ## Step 4: Adding the DASH MIME Type
-DASH requires statements to learn how to analyze video and audio files. DASH manifest file ends in **.mpd**. Windows IIS does not know about this extension. So, for IIS to correctly send the file to the player, you need to add this extension to IIS.
-Under connections click your server and double Click MIME Types
-1. Type **.mpd** for File name extension; type **application/dash+xml** for MIME-type
+DASH requires statements to learn how to analyze video and audio files. DASH manifest file ends in **.mpd**. Windows IIS does not know about this extension. So, for IIS to correctly send the file to the player, you need to add this extension to IIS. In contrast to MPEG-TS, there are different ways to prepare media for MPEG-DASH transmission. **.m4s** files are one option—in fact, MPEG-TS is another one [ref](https://superuser.com/questions/1349502/what-is-the-format-of-the-mpeg-dash-m4s-generally-segment). Under connections click your server and double Click MIME Types
+1. Type **.mpd** for File name extension; type **application/dash+xml** for MIME-type.
 2. Press okay.
+3. Type **.m4s** for File name extension; type **video/mp4** for MIME-type.
+4. Press okay.
 
 <img src="https://github.com/iamgmujtaba/dash-server/blob/master/figures/mime_dash.jpg" width="550" height="200">
 
