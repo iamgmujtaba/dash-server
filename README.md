@@ -32,7 +32,7 @@ Under connections click your server and double Click MIME Types
 1. Type **.mpd** for File name extension; type **application/dash+xml** for MIME-type
 2. Press okay.
 
-<!-- <img src="https://github.com/iamgmujtaba/hls-server/blob/master/figures/mime.jpg" width="550" height="200"> -->
+<img src="https://github.com/iamgmujtaba/hls-server/blob/master/figures/mime_dash.jpg" width="550" height="200">
 
 ## Step 5: FFmpeg Installation
 You can skip Step 5 and Step 6, by downloading the processed video from <!-- [google drive](https://drive.google.com/drive/folders/1JS9lwJWr9pOibl9ZpOB6uAinh-PseZXG).  --> After downloading the video place it into the default IIS physical path (i.e., C:\inetpub\wwwroot\) or the modified path.
