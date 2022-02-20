@@ -26,13 +26,13 @@ To test streams, you need to allow other websites to access files on your web se
 
 <img src="https://github.com/iamgmujtaba/dash-server/blob/master/figures/hrs_page.jpg" width="550" height="200">
 
-## Step 4: Adding the HLS MIME Type
-HLS requires statements to learn how to analyze video and audio files. HLS manifest file ends in **.mpd**. Windows IIS does not know about this extension. So, for IIS to correctly send the file to the player, you need to add this extension to IIS.
+## Step 4: Adding the DASH MIME Type
+DASH requires statements to learn how to analyze video and audio files. DASH manifest file ends in **.mpd**. Windows IIS does not know about this extension. So, for IIS to correctly send the file to the player, you need to add this extension to IIS.
 Under connections click your server and double Click MIME Types
 1. Type **.mpd** for File name extension; type **application/dash+xml** for MIME-type
 2. Press okay.
 
-<img src="https://github.com/iamgmujtaba/hls-server/blob/master/figures/mime_dash.jpg" width="550" height="200">
+<img src="https://github.com/iamgmujtaba/dash-server/blob/master/figures/mime_dash.jpg" width="550" height="200">
 
 ## Step 5: FFmpeg Installation
 You can skip Step 5 and Step 6, by downloading the processed video from <!-- [google drive](https://drive.google.com/drive/folders/1JS9lwJWr9pOibl9ZpOB6uAinh-PseZXG).  --> After downloading the video place it into the default IIS physical path (i.e., C:\inetpub\wwwroot\) or the modified path.
