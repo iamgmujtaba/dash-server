@@ -51,10 +51,10 @@ Open cmd and type **ffmpeg** in the command prompt. If you see a lot of text in 
 1. Download sample video [BigBuckBunny](https://download.blender.org/demo/movies/BBB/bbb_sunflower_1080p_30fps_normal.mp4).
 2. Rename the downloaded file to **input.mp4**
 3. Run the following command in the cmd in the same directory.
-<!-- 
+
 ```shell
-ffmpeg -i input.mp4 -force_key_frames "expr:gte(t,n_forced*10)" -strict -2 -c:a aac -c:v libx264 -f segment -segment_list_type m3u8 -segment_list_size 0 -segment_time 10.0 -segment_time_delta 0.1 -segment_list out.m3u8 out%02d.ts
-``` -->
+ffmpeg -re -i input.mp4 -map 0 -map 0 -c:v libx264 -b:v:0 800k -b:v:1 300k -s:v:1 320x170 -profile:v:1 baseline -profile:v:0 main -bf 1 -keyint_min 120 -g 120 -sc_threshold 0 -b_strategy 0 -ar:a:1 22050 -use_timeline 1 -use_template 1 -window_size 5 -adaptation_sets "id=0,streams=v id=1,streams=a" -f dash out.mpd
+```
 5. Once the process is completed, copy all the files excluding **input.mp4** into the default IIS physical path (i.e., C:\inetpub\wwwroot\) or the modified path. 
 
 ## Step 7: Final Testing
