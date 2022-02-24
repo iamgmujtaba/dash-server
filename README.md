@@ -70,6 +70,6 @@ Open cmd and type **ipconfig**. Get IPv4 Address. It would be 192.XXX.XXX.XXX.
 Install [VLC](https://www.videolan.org/vlc/download-windows.html). Open **Network Stream** by using **Ctrl+N**. Type the URL like this **http://192.XXX.XXX.XXX/bbb_dash/out.mpd**. **bbb_dash** is the directory of the processed BigBuckBunny video and **out.mpd** is the DASH text file we created using the above script. Finally, press play. 
 If you can watch the video, it means you have configured DASH on your window machine.
 #### Ubuntu or Jetson Devices
-If you want to use a native HLS web player, clone [dash.js](https://github.com/Dash-Industry-Forum/dash.js) from GitHub and follow the [installation](https://github.com/Dash-Industry-Forum/dash.js#getting-started) instructions.
+If you want to use a native DASH web player, clone [dash.js](https://github.com/Dash-Industry-Forum/dash.js) from GitHub and follow the [installation](https://github.com/Dash-Industry-Forum/dash.js#getting-started) instructions.
 
 Raise an issue if you are facing any problem :)
