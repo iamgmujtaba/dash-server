@@ -36,7 +36,7 @@ DASH requires statements to learn how to analyze video and audio files. DASH man
 <img src="https://github.com/iamgmujtaba/dash-server/blob/master/figures/mime_dash.jpg" width="550" height="200">
 
 ## Step 5: FFmpeg Installation
-You can skip Step 5 and Step 6, by downloading the processed video from <!-- [google drive](https://drive.google.com/drive/folders/1JS9lwJWr9pOibl9ZpOB6uAinh-PseZXG).  --> After downloading the video place it into the default IIS physical path (i.e., C:\inetpub\wwwroot\) or the modified path.
+<!-- You can skip Step 5 and Step 6, by downloading the processed video from <!-- [google drive](https://drive.google.com/drive/folders/1JS9lwJWr9pOibl9ZpOB6uAinh-PseZXG).  --> After downloading the video place it into the default IIS physical path (i.e., C:\inetpub\wwwroot\) or the modified path. -->
 1. Download FFmpeg from [here](https://www.ffmpeg.org/download.html#build-windows).
 2. Extract the downloaded FFmpeg zip file to **C:\ffmpeg**.
 3. Navigate to the **bin** folder under C:\ffmpeg and copy the address using Ctrl+C.
